@@ -4,8 +4,8 @@
 		"description": "Template repo with my standard React and Webpack setup",
 		"main": "index.js",
 		"scripts": {
-				"dev": "webpack-dev-server --config webpack.server.js --open",
-				"build:": "webpack --config webpack.prod.js"
+				"start": "webpack-dev-server --config webpack.server.js --open",
+				"publish": "webpack --config webpack.prod.js"
 		},
 		"repository": {
 				"type": "git",
