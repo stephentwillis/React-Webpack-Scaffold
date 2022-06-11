@@ -8,7 +8,7 @@ module.exports = {
 			'./src/js/vendor.js',
 			'./src/css/vendor.css'
 		],
-		styles  : './src/css/styles.css',
+		styles  : './src/css/styles.scss',
 		scripts : './src/app.js',
 		ie      : './src/sass/ie.scss',
 	},
