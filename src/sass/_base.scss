@@ -97,8 +97,8 @@ b,
 
 figure {
 	text-align: center;
-    background-color: $gray-lightest;
-	color: $gray-darkest;
+    //background-color: $gray-lightest;
+	//color: $gray-darkest;
     padding: 1rem;
     border-radius: 1rem;
 	font-size: 1.25rem;
@@ -112,13 +112,13 @@ button {
 
 a {
 	text-decoration: none !important;
-	color: $orange;
+	//color: $orange;
 	@include transition(all $speed-hover ease-out);
 }
 
 a:hover {
-	color: $gray-darker;
-	background-color: $orange;
+	//color: $gray-darker;
+	//background-color: $orange;
 }
 // a
 // END BUTTONS + LINKS
