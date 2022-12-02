@@ -1,0 +1,62 @@
+// BREAKPOINTS
+$small: 480px;
+$small-ie: 480px, 'no-query' true;
+$smedium: 600px;
+$smedium-ie: 600px, 'no-query' true;
+$medium: 790px;
+$medium-ie: 790px, 'no-query' true;
+$large: 1024px, 'no-query' true;
+$intro-break: 1110px;
+$xlarge: 1440px;
+// Breakpoint to control all appendAround.js breakpoints
+
+// MAX WIDTH FOR COPY
+$copy-max: 57rem;
+
+// MARGINS AND SPACING
+$quarter-gap: 0.25rem;
+$half-gap: 0.5rem;
+$single-gap: 1rem;
+$double-gap: 2rem;
+
+// COLOURS
+// END COLOURS
+
+
+
+// FONTS
+$font-primary: Helvetica, Arial, sans-serif;
+
+// FONT SIZES
+$font-smallest: 0.5rem;
+$font-small: 0.75rem;
+$font-regular: 1rem;
+$font-big: 1.5rem;
+
+$h1: 1.75rem;
+$h2-home: 1.5rem;
+$h2: 1.5rem;
+$h3: 0.9rem;
+
+$font-scale: 1.333;
+$font-scale-mob: 1.125;
+
+$font-smaller: $font-big / $font-scale;
+$font-bigger: $font-big * $font-scale;
+$mob-font-bigger: $font-big * $font-scale-mob;
+$intro-copy-lrg: 1.5rem;
+
+// BORDERS
+//$main-border: 1px solid $gray;
+//$light-border: 1px solid $gray-lightest;
+
+// LETTER SPACING
+$head-space: 0.2rem;
+$button-space: 0.02rem;
+$topmenu-space: 0.03rem;
+$intro-space: 0.1rem;
+
+// ANIMATION/TRANSITION SPEEDS
+$speed-slow: 0.8s;
+$speed-hover: 0.4s;
+$speed-quick: 0.25s;

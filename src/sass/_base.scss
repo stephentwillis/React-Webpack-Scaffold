@@ -1,0 +1,136 @@
+body {
+	font-family: $font-primary;
+	font-size: $font-regular;
+	//color: $gray-lightest;
+	//background-color: $gray-darkest;
+
+	&.noscroll {
+		overflow: hidden;
+	}
+
+	/* Set up breakpoints for JS detection & Media Query Combiner */
+	&:before {
+		content: "xsmall";
+		display: none;
+	} // smallest
+
+	@include breakpoint($small) {
+		&:before {
+			content: "small";
+		}
+	} // small
+
+	@include breakpoint($smedium) {
+		&:before {
+			content: "smedium";
+		}
+	} // medium
+
+	@include breakpoint($medium) {
+		&:before {
+			content: "medium";
+		}
+	} // medium
+
+	@include breakpoint($large) {
+		&:before {
+			content: "large";
+		}
+	} // large
+
+	@include breakpoint($xlarge) {
+		&:before {
+			content: "xlarge";
+		}
+	} // xlarge
+}
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+h1,
+h2 {
+	letter-spacing: $head-space;
+}
+
+h3 {
+	@include old-ie {
+		letter-spacing: 2px;
+	}
+	letter-spacing: 0.15rem;
+}
+
+h4,
+h5 {
+	@include old-ie {
+		letter-spacing: 1px;
+	}
+	letter-spacing: 0.07rem;
+}
+
+h1 {
+	font-size: $h1;
+}
+
+h2 {
+	font-size: $h2;
+}
+
+h3 {
+	font-size: $h3;
+}
+// END headings
+
+// PARAGRAPHS, CAPTIONS + FONT STYLES
+strong,
+b,
+.heavy {
+	font-weight: bold;
+}
+
+figure {
+	text-align: center;
+    background-color: $gray-lightest;
+	color: $gray-darkest;
+    padding: 1rem;
+    border-radius: 1rem;
+	font-size: 1.25rem;
+}
+// END paragraphs, captions + font styles
+
+// BUTTONS + LINKS
+button {
+	font-family: Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none !important;
+	color: $orange;
+	@include transition(all $speed-hover ease-out);
+}
+
+a:hover {
+	color: $gray-darker;
+	background-color: $orange;
+}
+// a
+// END BUTTONS + LINKS
+
+// IMAGES
+img {
+	max-width: 100%;
+}
+// END IMAGES
+
+// FONT AWESOME MODIFIERS
+// END FONT AWESOME
+
+// BOOTSTRAP MODIFIERS
+// END BOOTSTRAP MODIFIERS
