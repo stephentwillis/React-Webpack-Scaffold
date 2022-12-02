@@ -9,8 +9,7 @@ module.exports = {
 			'./src/css/vendor.css'
 		],
 		styles  : './src/sass/styles.scss',
-		scripts : './src/app.js',
-		ie      : './src/sass/ie.scss',
+		scripts : './src/app.js'
 	},
 	module  : {
 		rules : [
@@ -18,11 +17,11 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
-				  loader: "babel-loader",
-				  options: {
-					presets: ['@babel/preset-env', '@babel/preset-react'],
-					plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-classes']
-				   }
+					loader: "babel-loader",
+					options: {
+						presets: ['@babel/preset-env', '@babel/preset-react'],
+						plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-transform-classes']
+					}
 				}
 			},
 			{
@@ -46,7 +45,9 @@ module.exports = {
 	plugins : [
 		new CleanWebpackPlugin()
 	],
-	node    : {
-		fs : 'empty'
+	resolve: {
+		fallback: {
+			fs : false
+		}		
 	}
 };

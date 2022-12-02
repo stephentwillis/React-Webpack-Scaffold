@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from './pages/Layout';
@@ -17,8 +18,6 @@ export default function App() {
     );
 }
 
-let el = document.getElementsByClassName('app__root')[0];
-
-if (el) {
-    ReactDOM.render(<App />, el);
-}
+const container = document.getElementById('app');
+const root = createRoot(container); 
+root.render(<App tab="home" />);

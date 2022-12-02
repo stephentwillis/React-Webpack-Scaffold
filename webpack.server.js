@@ -1,17 +1,21 @@
 const webpack = require('webpack');
 const path = require('path');
 const common = require('./webpack.common');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
 	mode: 'development',
-	devtool: 'none',
+	devtool: 'hidden-nosources-cheap-source-map',
 	devServer: {
-		port: 8080,
+		port: 1234,
 		open: true,
-		contentBase: path.join(__dirname, "../dist")
+		hot: false,
+		liveReload: true,
+		static: { 
+			directory: path.join(__dirname, "dist")
+		}
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -38,7 +42,7 @@ module.exports = merge(common, {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			template: './index.html'
+			template: './src/index.html'
 		}),
 		new webpack.ProvidePlugin({
 			$: 'jquery',

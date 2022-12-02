@@ -10,6 +10,7 @@ Template repo with my standard React and Webpack setup
 [NVM Windows](https://github.com/coreybutler/nvm-windows)  
 [NVM macOS/Linux*](https://github.com/nvm-sh/nvm)
 
+### Node v18.12.1
 
 # Directory Structure
  
@@ -22,11 +23,11 @@ Template repo with my standard React and Webpack setup
 
 # Scripts
 
-    npm run dev
+    npm run start
 __Use to work on general website files__.  
 Starts a webpack server. Used for general site development
 <br/><br/>
 
-    npm run build
+    npm run publish
 __Builds everything__  
 Builds and bundles the application.
